@@ -1,0 +1,7 @@
+body{
+color: white;
+height: 100%;
+background-image: url("img/netimage.jpg"); 
+background-attachment: fixed; 
+background-size: cover;
+}

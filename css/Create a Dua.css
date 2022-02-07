@@ -1,0 +1,389 @@
+*{
+    margin: 0%;
+    padding: 0%;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+
+
+body{
+	background-color: #f1ebeb;
+    font-family: sans-serif;
+}
+
+
+
+
+
+.wrapper .sidebar{
+	background: white;
+	position: relative;
+	top: 0;
+	left: 0;
+	margin-top: 10px;
+	padding: 20px 0;
+	border-radius: 0 60px 60px 0;
+	transition: all 0.5s ease;
+	box-shadow:  1px 1px 1px white;
+}
+
+
+
+
+
+
+
+.wrapper .sidebar ul li a{
+	display: block;
+	padding: 13px 30px;
+	border-bottom: 1px solid green;
+	color: rgb(241, 237, 237);
+	font-size: 16px;
+	position: relative;
+    margin-bottom: 20px;
+}
+
+
+
+.wrapper .sidebar ul li a .icon{
+	color: #5fbe7d;
+	width: 30px;
+	display: inline-block;
+}
+
+
+
+
+.wrapper .sidebar ul li a .item{
+	display: none;
+}
+
+
+
+.wrapper .sidebar ul:hover .item{
+	display: inline-block;
+}
+
+
+
+.wrapper .sidebar ul li a .item{
+	color:#5fbe7d;
+}
+
+
+
+.wrapper .sidebar ul li a .item:hover{
+	color: black;
+}
+
+
+
+.wrapper .sidebar ul li a:hover,
+.wrapper .sidebar ul li a.active{
+	color: #0c7db1;
+}
+
+
+.wrapper .sidebar ul li a:hover .icon,
+.wrapper .sidebar ul li a.active .icon{
+	color: black;
+}
+
+
+.wrapper .sidebar ul li a:hover:before,
+.wrapper .sidebar ul li a.active:before{
+	display: block;
+}
+
+
+
+.wrapper .section{
+	width: 10px;
+	transition: all 0.5s ease;
+}
+
+
+.wrapper .section .top_navbar{
+	background-color: rgba(255, 255, 255, 0.837);
+	height: 50px;
+	display: flex;
+	align-items: center;
+	padding: 0  40px 0 12px;
+ 
+}
+
+
+.wrapper .section .top_navbar .hamburger a{
+	font-size: 28px;
+	color: #5fbe7d;
+}
+
+
+.wrapper .section .top_navbar .hamburger a:hover{
+	color: #0f0f0f;
+}
+
+
+
+body.active .wrapper .sidebar{
+	left: -225px;
+}
+
+
+
+body.active .wrapper .section{
+	margin-left: 0;
+	width: 25px;
+}
+
+
+.list__item{
+	list-style-type: none;
+	display: inline-block;
+	margin: 18px 0 0 20px;
+	cursor: pointer;
+}
+
+
+
+
+
+
+.list__item{
+	list-style-type: none;
+	display: inline-block;
+	margin: 18px 0 0 20px;
+	cursor: pointer;
+}
+
+
+.list-right{
+	float: right;
+	margin-right: 40px;
+	color: #5fbe7d;
+	font-weight: bolder;
+}
+
+
+
+.list-right a{
+	color: green;
+}
+
+
+
+.navTitle a{
+	color: black;
+}
+
+
+
+
+.list-p-left a{
+	color: black;
+}
+
+
+
+.list__item a:hover{
+	color:#5fbe7d;
+	font-weight: bolder;
+} 
+
+
+
+.top-header li:hover{
+	background-color: white;
+	border-radius: 10px;
+	padding: 5px 10px;
+}
+
+
+
+.top-header ul li a{
+	text-decoration: none;
+}
+
+
+
+.navTitle{
+	font-size: larger;
+	font-weight: 600;
+	font-size: 30px;
+	margin-left: 100px;
+}
+
+
+
+
+.list-p-left{
+color: black;
+	margin-left: 190px;
+	font-weight: bolder;
+}
+
+
+
+
+.logout{
+	display: none;
+	
+}
+
+.main-section{
+	display: flex;
+}
+
+
+
+
+
+
+
+
+
+
+ .hamburger{
+	background-color: black;
+	width: 30px;
+	float: right;
+	position: relative;
+	top: 27px;
+	text-align: center;
+	margin-right: 20px;
+	display: none;
+}
+
+
+.hamburger a:hover{
+	color: #a2ecff;
+	
+}
+
+.hamburger a{
+	color: white;
+	align-items: center;
+	font-size: 20px;
+	
+}
+
+.interface{
+
+	margin: 90px 0px 0 150px;
+}
+
+
+.password-management{
+	border-radius: 15px;
+	padding: 0px 60px;	
+	border: 1px solid #5fbe7d;
+	
+}
+
+
+.create-a-dua{
+	color: white;
+	background-color:#5fbe7d ;
+	border: none;
+	width: 100%;
+    font-size: 20px;
+	font-weight: 600;
+    padding: 10px 40px;
+    box-shadow: 2px 3px 4px  rgb(255, 255, 255);
+}
+
+
+
+
+@media (max-width:600px){
+
+	.interface{
+		margin: 40px 0 0 80px;
+	}
+	
+
+}
+
+
+
+
+
+@media only screen and (max-width: 775px){
+
+	.wrapper .sidebar ul li a {
+		display: flex;
+	}
+}	
+
+
+@media only screen and (max-width: 700px){
+	
+	.navTitle{
+		margin-left: 60px;
+}
+
+.list-p-left{
+	margin-left: 60px;
+}
+
+
+}
+
+
+
+@media (max-width:600px){
+	.sideBar{
+		display: none;
+	}
+
+	
+.list-right{
+	display: none;
+}
+
+
+.logout{
+	display: block;
+}
+
+
+.hamburger{
+	display: block;
+}
+
+.wrapper{
+	display: none;
+}
+
+
+.navTitle{
+	margin-left: 40px;
+}
+
+.list-p-left{
+margin-left: 40px;
+
+}
+
+
+
+}
+
+
+
+
+
+
+@media only screen and (max-width: 380px){
+
+
+	.navTitle{
+		margin-left: 29px;
+}
+
+.list-p-left{
+	margin-left: 20px;
+	
+}
+}
+
