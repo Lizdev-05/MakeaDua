@@ -33,14 +33,14 @@ body{
 
 
 
-.wrapper .sidebar ul li a{
+.wrapper .sidebar ul li {
 	display: block;
 	padding: 13px 30px;
 	border-bottom: 1px solid green;
-	color: rgb(241, 237, 237);
+	color: #5fbe7d;
 	font-size: 16px;
 	position: relative;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
 }
 
 
@@ -62,6 +62,7 @@ body{
 
 .wrapper .sidebar ul:hover .item{
 	display: inline-block;
+	margin-left: 10px;
 }
 
 
@@ -84,8 +85,8 @@ body{
 }
 
 
-.wrapper .sidebar ul li a:hover .icon,
-.wrapper .sidebar ul li a.active .icon{
+.wrapper .sidebar ul li:hover .icon,
+.wrapper .sidebar ul li.active .icon{
 	color: black;
 }
 
@@ -273,44 +274,36 @@ color: black;
 }
 
 
-.password-management{
-	border-radius: 15px;
-	padding: 0px 60px;	
-	border: 1px solid #5fbe7d;
-	
-}
 
 
-.create-a-dua{
-	color: white;
-	background-color:#5fbe7d ;
-	border: none;
-	width: 100%;
-    font-size: 20px;
-	font-weight: 600;
-    padding: 10px 40px;
-    box-shadow: 2px 3px 4px  rgb(255, 255, 255);
+
+.settings{
+    background-color: white;
 }
 
 
 
+.settings p{
+    color: black;
+    font-weight: bolder;
+}
 
-@media (max-width:600px){
 
-	.interface{
-		margin: 40px 0 0 80px;
-	}
-	
-
+.settings a{
+    color: #5fbe7d;
+    font-weight: bolder;
+    text-decoration: none;
 }
 
 
 
 
 
-@media only screen and (max-width: 775px){
 
-	.wrapper .sidebar ul li a {
+
+@media only screen and (max-width: 1015px){
+
+	.wrapper .sidebar ul li  {
 		display: flex;
 	}
 }	
@@ -324,6 +317,10 @@ color: black;
 
 .list-p-left{
 	margin-left: 60px;
+}
+
+.interface{
+	margin: 80px 0 0 80px;
 }
 
 
@@ -365,6 +362,10 @@ margin-left: 40px;
 
 }
 
+.interface{
+	margin: 40px 0 0 10px;
+}
+
 
 
 }
@@ -374,8 +375,10 @@ margin-left: 40px;
 
 
 
-@media only screen and (max-width: 380px){
+@media only screen and (max-width: 400px){
 
+
+	
 
 	.navTitle{
 		margin-left: 29px;
