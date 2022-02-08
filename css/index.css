@@ -196,7 +196,7 @@ hr{
     background: linear-gradient(95.15deg, #F2F6FF 13.98%, #FFFFFF 106.1%) 
 }
 .box10{
-    margin-inline: 30px;
+    margin-inline: 15px;
     font-weight: 700;
     margin-top: 50px;
     color: #198C2F;
@@ -206,7 +206,7 @@ hr{
     background: linear-gradient(95.15deg, #F2F6FF 13.98%, #FFFFFF 106.1%)
 }
 .box11{
-    margin-inline: 30px;
+    margin-inline: 15px;
     font-weight: 700;
     margin-top: 50px;
     color: #198C2F;
@@ -217,7 +217,7 @@ hr{
     background: linear-gradient(95.15deg, #F2F6FF 13.98%, #FFFFFF 106.1%)
 }
 .box12{
-    margin-inline: 30px;
+    margin-inline: 15px;
     font-weight: 700;
     margin-top: 50px;
     color: #198C2F;
@@ -356,15 +356,16 @@ hr{
     }
     .text4{
       font-size: 20px ;
+      margin-bottom: 10px;
     }
     .intro{
         text-align: between;
     }
     .text5{
-    font-size: 30px;
+    font-size: 20px;
     }
     .text6{
-    font-size: 20px;
+    font-size: 15px;
     }
     .text7{
         font-size: 40px;
@@ -378,4 +379,9 @@ hr{
     .socialmedia{
         margin-bottom: 10px;
     }
+}
+.i-color{
+    color: rgb(45, 45, 151);
+    font-size: 30px;
+    margin: 2px;
 }

@@ -7,8 +7,8 @@
 
 
 body{
-	background-color: #f1ebeb;
-    font-family: sans-serif;
+	background: linear-gradient(95.15deg, #F2F6FF 13.98%, #FFFFFF 106.1%);
+    font-family: 'Roboto', sans-serif ;
 }
 
 
@@ -234,8 +234,60 @@ color: black;
 .main-section{
 	display: flex;
 }
+.box1{
+	border: 2px solid white;
+	border-radius: 10px;
+	padding: 10px 10px;
+}
+.box2{
+	border: 2px solid white;
+	border-radius: 10px;
+	padding: 10px 10px;
+	margin-top: 20px;
+}
+table{
+	border-collapse: separate;
+	border-spacing: 8px 4px;
 
+}
+td,th{
+	padding: 10px 10px;
+	background-color: white;
+}
+tbody{
+	text-align: center ;
+}
 
+@media screen and (max-width:700px){
+	
+	td{
+		display: block;
+		text-align: right;
+	}
+	th{
+		display: none;
+	}
+	td:nth-child(1)::before{
+		content: "Posts";
+	}
+	td:nth-child(2)::before{
+		content: "Likes";
+	}
+	td:nth-child(3)::before{
+		content: "Comments";
+	}
+	td:nth-child(4)::before{
+		content: "Shared";
+	}
+	
+	td.events:nth-child(4)::before{
+		content: "Dates";
+	}
+	td::before{
+		float: left;
+		margin-right: 3rem;
+	}
+}
 
 
 
@@ -268,10 +320,10 @@ color: black;
 	
 }
 
-.interface{
+ .interface{
 
 	margin: 90px 0px 0 150px;
-}
+} 
 
 
 
@@ -320,7 +372,7 @@ color: black;
 }
 
 .interface{
-	margin: 80px 0 0 80px;
+	margin: 80px 0 0 0px;
 }
 
 
@@ -363,7 +415,7 @@ margin-left: 40px;
 }
 
 .interface{
-	margin: 40px 0 0 10px;
+	margin: 40px 0 0 0px;
 }
 
 
@@ -389,4 +441,3 @@ margin-left: 40px;
 	
 }
 }
-
