@@ -4,14 +4,6 @@
     font-family: 'Roboto', sans-serif ;
 }
 
-body{
-    padding: 0;
-    margin: 0;
-    background: linear-gradient(95.15deg, #F2F6FF 13.98%, #FFFFFF 106.1%);
-    color: #848D9D;
-    font-family: 'Roboto', sans-serif ;
-}
-
 .heading{
     margin-top: 10px;
     margin-bottom: 10px;
@@ -21,8 +13,6 @@ h2{
     
     font-size: 24px;
 }
-
-
 
 
 
@@ -41,6 +31,7 @@ h2{
     font-weight: bolder;
     color: #01AA71;
 }
+
 
 h6{
     margin-top: 10px;   
@@ -62,25 +53,78 @@ hr{
 h1{
     margin-top: 30px;
     margin-bottom: 20px;
-    font-size: 20px;
+    font-size: 18px;
     color: #6EC37F;
 }
 
 .form-control{
     background: transparent;
-    border-color: transparent;
-    border-radius: 0;
+    border-color: 1px black;
+    border-radius: 30;
     font: size 20px;
 }
 
+.eye{
+    float: right;
+    transform: translateY(-27px);
+    opacity: 0.6;
+}
+
+h3{
+    font-size: 12px;
+    padding-bottom: 10px;
+}
+
+#message {
+    display:none;
+    background: none;
+    color: #000;
+    position: relative;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
+  #message p {
+    padding-bottom: 0px;
+    font-size: 10px;
+  }
+  
+  /* Add a green text color and a checkmark when the requirements are right */
+  .valid {
+    color: rgb(37, 190, 37);
+  }
+  
+  
+  /* Add a red text color and an "x" icon when the requirements are wrong */
+  .invalid {
+    color: red;
+  }
+  
+
 .btn{
+    
     background: white;
     border-color: white;
     color: #6EC37F;
     box-shadow: 10px 14px 16px rgba(112, 156, 118, 0.25);
     border-radius: 25px;
-    width: 240px;
+    width: 260px;
     
+}
+
+.btn-primary{
+    float: right;
+}
+
+hr.hr2{
+    border-top: 4px solid #000000;
+    width: 17%;
+    margin-left: 10px;
+    border-end-start-radius: 80px;
+    border-start-end-radius: 80px;
+    border-start-start-radius: 80px;
+    border-end-end-radius: 80px;
+
 }
 
 h4{
@@ -96,7 +140,7 @@ h4{
     box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
     height: 34px;
     width: 280px;
-    margin-bottom: 7px;
+    margin-bottom: 12px;
 }
 
 .google{
@@ -116,7 +160,7 @@ h4{
     box-shadow: none;
     height: 38px;
     width: 284px;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
 }
 
 .facebookic{
@@ -174,6 +218,7 @@ h4{
 
 .linktext{
     font-weight: 800;
+    text-decoration-line: none;
 }
 
 #copyright{
