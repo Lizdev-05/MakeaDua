@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact</title>
+    <!-- <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"> -->
+    <link rel="stylesheet" href="css/csss/bootstrap.min.css">
+    <link rel="stylesheet" href="css/contact.css">
+</head>
+<body>
+    <div class="container">
+        <div class="row justify-content-center">
+             <div class=" solid col-lg-6 col-md-8 col-sm-8 col-xs-10">
+              <div style="border-radius: 10px;" class="btn btn-success"><h2>contact us</h2></div>
+               <br>
+               <br>
+            <img style="height: 50px;" src="img/icons8-address.gif" > <h3>23,Avenue paris </h3><br> 
+            <img class="image" src="img/email.png" > <h3> @gmail.com</h3> <br> 
+            <img class="image" src="img/phone.png" > <h3>+234 </h3> <br>
+              <a href="http" class="href"><img class="image" src="img/instagram.png" ></a>
+                <a href="http" class="href"><img class="image" src="img/facebook.png" ></a> 
+                <a href="http" class="href"><img class="image" src="img/twitter.png" ></a> 
+
+               
+              
+              
+
+              
+             </div>
+        
+             
+            
+              
+                <div class=" white col-lg-6 col-md-8 col-sm-8 col-xs-10 ">
+               
+                  <div class="form">
+                      <div class="title">Get in Touch</div>
+                      <div class="subtitle">feel free to drop us a line below!</div>
+                      <div class="input-container ic1">
+                        <input id="firstName" class="input" type="text" placeholder=" " />
+                        <div class="cut"></div>
+                      <label for="firstname" class="placeholder">First name</label>
+                        <div id="firstname-error" style="color: red;"></div>
+                      </div>
+              
+                       <div class="input-container ic2">
+                        <input id="lastName" class="input" type="text" placeholder=" " />
+                        <div class="cut"></div>
+                        <label for="lastname" class="placeholder">Last name</label>
+                        <div id="lastname-error" style="color: red;"></div>
+                      </div>
+              
+                      <div class="input-container ic2">
+                        <input id="email" class="input" type="text" placeholder=" " />
+                        <div class="cut cut-short"></div>
+                        <label for="email" class="placeholder">Email
+                          <div id="email-error" style="color: red;"></div>
+                      </div>
+              
+                      <div class="input-container ic2">
+                        <input id="message" class="input" type="text" placeholder=" " />
+                        <div class="cut cut-short"></div>
+                        <label for="message" class="placeholder">message
+                        </div>
+                      <button onclick="submit()" type="text" class="submit">submit</button>
+                    
+                           </div>
+                           </div>
+               </div>
+    </div>
+    
+    
+             <script>
+
+ function submit(){
+  var firstname=document.getElementById("firstName").value 
+  var lastname=document.getElementById("lastName").value      
+  var Email=document.getElementById("email").value 
+  var firstnameError =document.getElementById("firstname-error")
+  var lastnameError =document.getElementById("lastname-error")
+  var EmailError =document.getElementById("email-error")
+  
+  //If first name is empty returm error
+    if(firstname  =="" && lastname  =="" && Email =="" ){
+      firstnameError.innerHTML = "Firstname input is required"
+      lastnameError.innerHTML = "Lastname input is required"
+      EmailError.innerHTML = "Email input is required"
+
+    }else{
+      firstnameError.innerHTML = ""
+      lastnameError.innerHTML = ""
+      EmailError.innerHTML = ""
+      return
+
+    }
+    }
+    
+             
+
+             </script>
+</body>
+</html>
