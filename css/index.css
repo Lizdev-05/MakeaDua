@@ -281,6 +281,15 @@ hr{
 .box21{
     background-color: black;
 }
+.box22{
+    
+    display: flex;
+}
+.i-color{
+    color:black ;
+    font-size: 30px;
+    margin: 2px;
+}
  #animation:hover{
 
     position: relative;
@@ -376,12 +385,4 @@ hr{
     .box20 a{
         font-size: 20px;
     }
-    .socialmedia{
-        margin-bottom: 10px;
-    }
-}
-.i-color{
-    color: rgb(45, 45, 151);
-    font-size: 30px;
-    margin: 2px;
 }
