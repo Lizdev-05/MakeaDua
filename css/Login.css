@@ -69,6 +69,7 @@ h1{
 }
 
 .btn{
+    
     background: white;
     border-color: white;
     color: #6EC37F;
@@ -102,7 +103,7 @@ h4{
     box-shadow: 0px 0px 4px 2px rgba(0, 0, 0, 0.25);
     height: 34px;
     width: 280px;
-    margin-bottom: 7px;
+    margin-bottom: 12px;
 }
 
 .google{
@@ -122,7 +123,7 @@ h4{
     box-shadow: none;
     height: 38px;
     width: 284px;
-    margin-bottom: 15px;
+    margin-bottom: 18px;
 }
 
 .facebookic{
@@ -180,6 +181,7 @@ h4{
 
 .linktext{
     font-weight: 800;
+    text-decoration-line: none;
 }
 
 #copyright{
