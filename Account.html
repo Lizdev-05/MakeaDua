@@ -125,19 +125,20 @@
        
 <div class="container">
      <div class="row justify-content-center">
-          <div class="col-lg-8 col-md-12 col-sm-12 col-12">
+          <div class="col-lg-7 col-md-12 col-sm-12 col-12">
               <div class="row justify-content-center">
-                  <div class="profile-path col-lg-4 col-md-5 col-sm-5 col-6">
-                        <img src="img/IMG_0071.jpg" alt="user-image" class="profile-img image-fluid">
+                  <div class="profile-path col-lg-4 col-md-4 col-sm-6 col-8">
+                        <img id="img" class="profile-img image-fluid">
                   </div>
-                  <div class="img-upload col-lg-5 col-md-6 col-sm-6 col-9">
-                    <input type="file"  class="custom-file-input" id="inputGroupFile01" accept="image/png, image/jpeg">
-                    <label  class="custom-file-label" for="inputGroupFile01">Upload your image</label>
+                  <div class="img-upload col-lg-7 col-md-6 col-sm-7 col-9">
+                      <label class="mt-2" for="input" style="background-color: rgba(128, 128, 128, 0.481); border: 2px solid gray; border-radius: 10px; padding: 0 5px;">Upload your picture</label>
+                    <input type="file"  onchange=file_changed() accept="image/png, image/jpeg" id=input style="display: none;">
+                    
                     <p style="color: gray;">Acceptable format are jpeg & png only.</p>
                 </div>
               </div>
           </div>  
-          <div class="col-lg-5 col-md-7 col-sm-8 col-10">
+          <div class="col-lg-7 col-md-8 col-sm-10 col-10 mt-2">
               <form method="get" action="index.html">
               <input type="text" class="form-control" placeholder="Full Name: " style="color: green;">
               <input type="text" class="form-control" placeholder="Email: " style="color: green;">
@@ -159,6 +160,9 @@
 
 
 
+
+
+
 </body>
 
 <script>
@@ -167,6 +171,19 @@ $(document).ready(function(){
         $('.wrapper').fadeToggle(1200);
     });
 })
+
+function file_changed(){
+               //to get image from you Device
+            var selectedFile = document.getElementById('input').files[0];
+            var img = document.getElementById('img')
+
+            //read and load image to ur box
+            var reader = new FileReader();
+            reader.onload = function(){
+                img.src = this.result
+            }
+            reader.readAsDataURL(selectedFile);
+            }
 
  </script>
 
