@@ -155,6 +155,18 @@ i {
     padding-right: 40px;
     margin-left: auto;
     background-color: #5fbe7d;
+    margin-bottom: 10px;
+}
+
+#more-btn {
+    display: block;
+    border-radius: 50px;
+    padding-left: 40px;
+    padding-right: 40px;
+    /* margin-left: auto; */
+    margin: 0 auto;
+    background-color: #5fbe7d;
+    margin-bottom: 10px;
 }
 
 
