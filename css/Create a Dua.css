@@ -270,7 +270,7 @@ color: black;
 
 .interface{
 
-	margin: 90px 0px 0 150px;
+	margin: 90px 0px 0 0px;
 }
 
 
@@ -299,6 +299,12 @@ color: black;
 
 
 
+@media only screen and (min-width:1250px){
+	.interface{
+		margin-left: 100px;
+	}
+}
+
 
 
 @media only screen and (max-width: 1015px){
@@ -319,9 +325,21 @@ color: black;
 	margin-left: 60px;
 }
 
-.interface{
+/* .interface{
 	margin: 80px 0 0 80px;
+} */
+
+.hamburger{
+	display: block;
 }
+
+.wrapper{
+	display: none;
+}
+
+/* .interface{
+	margin: 40px 0 0 20%;
+} */
 
 
 }
@@ -344,15 +362,6 @@ color: black;
 }
 
 
-.hamburger{
-	display: block;
-}
-
-.wrapper{
-	display: none;
-}
-
-
 .navTitle{
 	margin-left: 40px;
 }
@@ -362,9 +371,9 @@ margin-left: 40px;
 
 }
 
-.interface{
+/* .interface{
 	margin: 40px 0 0 10px;
-}
+} */
 
 
 
